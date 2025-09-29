@@ -5,39 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HYPER ONE Smart Home</title>
 
-  <!-- SEO cơ bản -->
+  <!-- SEO -->
   <meta name="description" content="Giải pháp Nhà Thông Minh cho gia đình Việt: an toàn, tiện nghi, tiết kiệm năng lượng. Triển khai nhanh, bảo hành rõ ràng." />
-  <meta name="keywords" content="Hyper One, Smart Home, AI Automation, IoT, Nhà thông minh, Hyper Bot" />
-  <link rel="canonical" href="https://smarthome.hyperonevn.com/" />
   <meta name="robots" content="index,follow" />
 
-  <!-- Thương hiệu & màu giao diện -->
-  <meta name="theme-color" content="#2979ff" />
-  <meta name="color-scheme" content="light dark" />
-
-  <!-- Social (Open Graph / Twitter) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="HYPER ONE Smart Home" />
+  <!-- Open Graph -->
   <meta property="og:title" content="HYPER ONE Smart Home" />
   <meta property="og:description" content="Giải pháp Nhà Thông Minh cho gia đình Việt: an toàn, tiện nghi, tiết kiệm năng lượng." />
-  <meta property="og:url" content="https://smarthome.hyperonevn.com/" />
   <meta property="og:image" content="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:alt" content="Logo HYPER ONE Smart Home" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HYPER ONE Smart Home" />
-  <meta name="twitter:description" content="Giải pháp Nhà Thông Minh cho gia đình Việt." />
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
-
-  <!-- Favicon & Touch icon -->
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/hyperonevn/hyperonevn/main/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
+  <!-- Favicon -->
+  <link rel="icon" href="https://raw.githubusercontent.com/hyperonevn/hyperonevn/main/favicon.ico" />
 
   <!-- Fonts & Tailwind -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -49,28 +30,26 @@
       },
     };
   </script>
-
-  <!-- Preload logo để hiển thị nhanh -->
-  <link rel="preload" as="image" href="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
-
-  <style>
-    body { font-family: 'Inter', system-ui, sans-serif; background-color: #ffffff; color: #111827; }
-  </style>
-
-  <!-- JSON-LD (SEO structured data) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "HYPER ONE Smart Home",
-    "url": "https://smarthome.hyperonevn.com/",
-    "logo": "https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg"
-  }
-  </script>
 </head>
-<body>
+<body class="bg-white text-gray-900">
+
   <!-- Header Section -->
   <header class="relative w-full overflow-hidden">
+    <!-- Dòng trên cùng -->
+    <div class="flex justify-between items-center px-4 md:px-12 py-3 border-b border-gray-200 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+      <h1 class="text-sm md:text-base font-medium text-gray-700">
+        Một sản phẩm thuộc <span class="text-hyperone-blue font-semibold">HYPER ONE</span>
+      </h1>
+      <div class="flex items-center gap-2">
+        <img src="https://raw.githubusercontent.com/hyperonevn/hyperonevn/main/hyperone.logo.jpg" 
+             alt="HYPER ONE Logo" class="h-8 w-auto" />
+        <span class="text-hyperone-blue font-bold text-sm md:text-base">
+          HYPER ONE – AI Automation for SMEs
+        </span>
+      </div>
+    </div>
+
+    <!-- Sóng nền -->
     <div class="absolute inset-0 overflow-hidden">
       <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" class="w-full h-full opacity-20" preserveAspectRatio="none">
         <path d="M 0 300 C 200 200 400 500 600 300 C 800 100 1000 400 1200 300 L 1200 800 L 0 800 Z" fill="#2979ff" opacity="0.3"></path>
@@ -79,6 +58,7 @@
       </svg>
     </div>
 
+    <!-- Nội dung chính -->
     <div class="relative z-10 container mx-auto px-4 py-12 md:py-24">
       <div class="flex flex-col md:flex-row items-center gap-8">
         <!-- Bên trái -->
@@ -88,22 +68,22 @@
               HYPER ONE Smart Home
             </span>
           </div>
-          <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6">
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6">
             Nhà thông minh không còn là tương lai – mà là tiêu chuẩn sống của bạn.
-          </h1>
+          </h2>
           <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-4 sm:mb-6">
             Ngôi nhà không chỉ là nơi để ở. Đó là nơi bắt đầu ngày mới êm đềm,
             chào đón bạn trở về sau giờ làm, và chăm sóc gia đình bạn ngay cả
             khi bạn vắng mặt. Chỉ với một chạm. Một lời nói. Mọi thứ vận hành
             trơn tru, liền mạch – như thể ngôi nhà hiểu được bạn.
           </p>
-          <div class="bg-[#2979ff]/10 text-[#2979ff] font-semibold px-4 py-2 rounded-full mb-6 sm:mb-8">
+          <div class="bg-hyperone-blue/10 text-hyperone-blue font-semibold px-4 py-2 rounded-full mb-6 sm:mb-8">
             <span class="text-lg md:text-xl">
               🎯 GÓI CƠ BẢN CHỈ TỪ 4.800.000đ
             </span>
           </div>
           <a href="https://zalo.me/3757102520257073644" target="_blank" rel="noopener noreferrer"
-             class="bg-[#2979ff] hover:bg-blue-600 text-white font-medium py-3 px-6 sm:px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+             class="bg-hyperone-blue hover:bg-blue-600 text-white font-medium py-3 px-6 sm:px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
             Tư vấn ngay
           </a>
         </div>
@@ -129,6 +109,7 @@
   </header>
 </body>
 </html>
+
 
   <!-- Features Section -->
   <section class="relative py-12 md:py-24 overflow-hidden">
