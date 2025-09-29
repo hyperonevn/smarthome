@@ -1,37 +1,73 @@
 
 <!DOCTYPE html>
 <html lang="vi">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HYPER ONE Smart Home</title>
+
+  <!-- SEO cơ bản -->
+  <meta name="description" content="Giải pháp Nhà Thông Minh cho gia đình Việt: an toàn, tiện nghi, tiết kiệm năng lượng. Triển khai nhanh, bảo hành rõ ràng." />
+  <link rel="canonical" href="https://smarthome.hyperonevn.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Thương hiệu & màu giao diện -->
+  <meta name="theme-color" content="#2979ff" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Social (Open Graph / Twitter) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HYPER ONE Smart Home" />
+  <meta property="og:title" content="HYPER ONE Smart Home" />
+  <meta property="og:description" content="Giải pháp Nhà Thông Minh cho gia đình Việt: an toàn, tiện nghi, tiết kiệm năng lượng." />
+  <meta property="og:url" content="https://smarthome.hyperonevn.com/" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="Logo HYPER ONE Smart Home" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HYPER ONE Smart Home" />
+  <meta name="twitter:description" content="Giải pháp Nhà Thông Minh cho gia đình Việt." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
+
+  <!-- Favicon & Touch icon -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/hyperonevn/hyperonevn/main/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            hyperone: {
-              blue: '#2979ff',
-            }
-          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: { hyperone: { blue: '#2979ff' } },
         },
-      }
-    }
+      },
+    };
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- ✅ Thêm favicon -->
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/hyperonevn/hyperonevn/main/favicon.ico">
+  <!-- Preload logo để hiển thị nhanh -->
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" imagesrcset="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" imagesizes="(max-width: 768px) 50vw, 25vw" />
 
   <style>
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-    }
+    body { font-family: 'Inter', system-ui, sans-serif; }
   </style>
+
+  <!-- JSON-LD (tùy chọn, tốt cho SEO thương hiệu) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HYPER ONE Smart Home",
+    "url": "https://smarthome.hyperonevn.com/",
+    "logo": "https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg"
+  }
+  </script>
 </head>
 
 
