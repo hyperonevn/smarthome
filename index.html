@@ -1,6 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="vi">
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -10,6 +7,7 @@
 
   <!-- SEO cơ bản -->
   <meta name="description" content="Giải pháp Nhà Thông Minh cho gia đình Việt: an toàn, tiện nghi, tiết kiệm năng lượng. Triển khai nhanh, bảo hành rõ ràng." />
+  <meta name="keywords" content="Hyper One, Smart Home, AI Automation, IoT, Nhà thông minh, Hyper Bot" />
   <link rel="canonical" href="https://smarthome.hyperonevn.com/" />
   <meta name="robots" content="index,follow" />
 
@@ -26,6 +24,7 @@
   <meta property="og:image" content="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:alt" content="Logo HYPER ONE Smart Home" />
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="HYPER ONE Smart Home" />
   <meta name="twitter:description" content="Giải pháp Nhà Thông Minh cho gia đình Việt." />
@@ -52,13 +51,13 @@
   </script>
 
   <!-- Preload logo để hiển thị nhanh -->
-  <link rel="preload" as="image" href="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" imagesrcset="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" imagesizes="(max-width: 768px) 50vw, 25vw" />
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/hyperonevn/smarthome/main/logo.jpg" />
 
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
+    body { font-family: 'Inter', system-ui, sans-serif; background-color: #ffffff; color: #111827; }
   </style>
 
-  <!-- JSON-LD (tùy chọn, tốt cho SEO thương hiệu) -->
+  <!-- JSON-LD (SEO structured data) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,9 +68,7 @@
   }
   </script>
 </head>
-
-
-<body class="w-full min-h-screen font-sans text-gray-800 bg-white">
+<body>
   <!-- Header Section -->
   <header class="relative w-full overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
@@ -81,8 +78,10 @@
         <path d="M 0 500 C 200 400 400 600 600 500 C 800 400 1000 550 1200 500 L 1200 800 L 0 800 Z" fill="#2979ff" opacity="0.2"></path>
       </svg>
     </div>
+
     <div class="relative z-10 container mx-auto px-4 py-12 md:py-24">
       <div class="flex flex-col md:flex-row items-center gap-8">
+        <!-- Bên trái -->
         <div class="flex flex-col items-start text-left w-full md:w-1/2">
           <div class="inline-flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full px-4 sm:px-6 py-2 mb-6 sm:mb-8">
             <span class="text-base sm:text-xl font-medium text-gray-800">
@@ -90,8 +89,7 @@
             </span>
           </div>
           <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6">
-            Nhà thông minh không còn là tương lai – mà là tiêu chuẩn sống của
-            bạn.
+            Nhà thông minh không còn là tương lai – mà là tiêu chuẩn sống của bạn.
           </h1>
           <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-4 sm:mb-6">
             Ngôi nhà không chỉ là nơi để ở. Đó là nơi bắt đầu ngày mới êm đềm,
@@ -108,26 +106,30 @@
              class="bg-[#2979ff] hover:bg-blue-600 text-white font-medium py-3 px-6 sm:px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
             Tư vấn ngay
           </a>
-        
-          <div class="w-full md:w-1/2 mt-8 md:mt-0">
-            <picture>
-              <source srcset="https://raw.githubusercontent.com/hyperonevn/smarthome/main/cover.jpg" type="image/jpeg" />
-              <img 
-                src="https://raw.githubusercontent.com/hyperonevn/smarthome/main/cover.jpg" 
-                alt="Ngôi nhà thông minh với thiết bị điều khiển" 
-                class="w-full h-auto rounded-2xl shadow-xl" 
-                loading="eager" 
-                onerror="this.onerror=null; this.src='https://via.placeholder.com/800x500/2979ff/ffffff?text=Smart+Home'" 
-              />
-            </picture>
-            <p class="mt-2 text-sm text-gray-600 italic text-center">
-              Hình ảnh dự án nhà thông minh thực tế đã triển khai
-            </p>
-          </div>
+        </div>
 
-
+        <!-- Bên phải -->
+        <div class="w-full md:w-1/2 mt-8 md:mt-0">
+          <picture>
+            <source srcset="https://raw.githubusercontent.com/hyperonevn/smarthome/main/cover.jpg" type="image/jpeg" />
+            <img 
+              src="https://raw.githubusercontent.com/hyperonevn/smarthome/main/cover.jpg" 
+              alt="Ngôi nhà thông minh với thiết bị điều khiển" 
+              class="w-full h-auto rounded-2xl shadow-xl" 
+              loading="eager" 
+              onerror="this.onerror=null; this.src='https://via.placeholder.com/800x500/2979ff/ffffff?text=Smart+Home'" 
+            />
+          </picture>
+          <p class="mt-2 text-sm text-gray-600 italic text-center">
+            Hình ảnh dự án nhà thông minh thực tế đã triển khai
+          </p>
+        </div>
+      </div>
     </div>
   </header>
+</body>
+</html>
+
   <!-- Features Section -->
   <section class="relative py-12 md:py-24 overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
